@@ -443,5 +443,10 @@ class Database_MySQLi_Connection extends \Database_Connection
 		$this->_in_transaction = false;
 		return true;
 	}
+	
+	public function last_insert_id()
+	{
+		return $this->_connection->insert_id;
+	}
 
 }

@@ -380,5 +380,17 @@ class DB
 	{
 		return \Database_Connection::instance($db)->rollback_transaction();
 	}
+	
+	/**
+	 * Return last insert id
+	 * 
+	 *		Db::last_insert_id();
+	 * 
+	 * @return int
+	 */
+	public static function last_insert_id($db = null)
+	{
+		return \Database_Connection::instance($db)->last_insert_id();		
+	}
 
 }

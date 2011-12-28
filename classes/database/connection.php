@@ -700,4 +700,11 @@ abstract class Database_Connection
 	{
 		return $this->_connection;
 	}
+	
+	/**
+	 * Returns last insert id
+	 * 
+	 * @return int
+	 */
+	abstract public function last_insert_id();
 }
