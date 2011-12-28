@@ -225,7 +225,7 @@ class Database_PDO_Connection extends \Database_Connection
 	
 	public function last_insert_id()
 	{
-		return $this->_connection->lastInsertId('sequence');
+		return $this->_connection->lastInsertId();
 	}
 
 }
